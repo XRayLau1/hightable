@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎访问hightable！！！</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #20B2AA 0%, #40E0D0 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-size: 1.4em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .highlight {
+            color: #FFEB3B;
+            font-weight: bold;
+        }
+        
+        .emoji {
+            font-size: 1.8em;
+            margin: 0 5px;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="emoji">🎉</span> 恭喜！</h1>
+        <p>刘子睿是高卓爸爸</p>
+        <p>嘿嘿嘿哈哈哈嘻嘻嘻略略略草泥马</p>
+        <p class="footer">页面加载时间: <span id="loadTime"></span></p>
+    </div>
+
+    <script>
+        // 显示页面加载时间
+        window.addEventListener('load', function() {
+            const loadTime = performance.now().toFixed(0);
+            document.getElementById('loadTime').textContent = loadTime + 'ms';
+        });
+    </script>
+</body>
+</html>
